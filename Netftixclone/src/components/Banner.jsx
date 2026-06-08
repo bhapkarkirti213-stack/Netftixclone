@@ -11,6 +11,7 @@ function Banner() {
             <div className="Banner-form">
                 <input type="email" placeholder="Email address" />
                 <button className="get-started-btn">Get Started </button>
+
             </div>
         </div>
     );

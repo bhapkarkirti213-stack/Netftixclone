@@ -1,4 +1,4 @@
-.home {
+.hero {
   min-height: 100vh;
   width: 100vw;
 
@@ -141,4 +141,123 @@
 
 .nav-right button:hover {
   background-color: #c11119
+}
+
+.trending {
+  padding: 50px;
+}
+
+.movie-slider {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+}
+
+.movie-card {
+  position: relative;
+}
+
+.movie-card img {
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.movie-rank {
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+
+  font-size: 6rem;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+.reasons {
+  padding: 50px;
+  align-items: center;
+}
+
+.reason-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reason-card {
+  flex: 1;
+  min-width: 250px;
+
+  padding: 25px;
+  border-radius: 16px;
+
+  background: linear-gradient(135deg,
+      #192247,
+      #210e17);
+
+  color: white;
+}
+
+.content {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.movie-card {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+
+.movie-rank {
+  z-index: 100;
+}
+
+.faq {
+  padding: 35px;
+  background: black;
+  color: white;
+  gap: 10px;
+  align-items: center;
+}
+
+.faq h2 {
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  background: #2d2d2d;
+  padding: 15px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  background: #414141;
+}
+
+.faq-answer {
+  background: #2d2d2d;
+  padding: 15px;
+  margin-bottom: 8px;
+
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.faq-item span:last-child {
+  font-size: 3rem;
+  font-weight: 300;
 }
